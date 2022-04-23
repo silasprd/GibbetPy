@@ -6,7 +6,7 @@ word_complete = []
 
 chances = 10
 
-print ("=======> Gibbet Game <=======")
+print ("=======> Jogo de Forca <=======")
 print (" ")
 
 
@@ -40,13 +40,99 @@ while True:
     if letter not in word:
         chances -= 1
 
-    if chances <= 0:
-        print ("Você foi enforcado!!!!")
+    if chances == 9:
+        print("  ===> FORCA <=== ")
+        print("  _______         ")
+        print(" |       |       |")
+        print(" |               |")
+        print(" |               |")
+        print(" |               |")
+        print(" |               |")
+    if chances == 8:
+        print("  ===> FORCA <=== ")
+        print("  _______         ")
+        print(" |       |       |")
+        print(" |      (_)      |")
+        print(" |               |")
+        print(" |               |")
+        print(" |               |")
+    if chances == 7:
+        print("  ===> FORCA <=== ")
+        print("  _______         ")
+        print(" |       |       |")
+        print(" |      (_)      |")
+        print(" |       |       |")
+        print(" |               |")
+        print(" |               |")
+    if chances == 6:
+        print("  ===> FORCA <=== ")
+        print("  _______         ")
+        print(" |       |       |")
+        print(" |      (_)      |")
+        print(" |      \|       |")
+        print(" |               |")
+        print(" |               |")
+    if chances == 5:
+        print("  ===> FORCA <=== ")
+        print("  _______         ")
+        print(" |       |       |")
+        print(" |      (_)      |")
+        print(" |      \|/      |")
+        print(" |               |")
+        print(" |               |")
+    if chances == 4:
+        print("  ===> FORCA <=== ")
+        print("  _______         ")
+        print(" |       |       |")
+        print(" |      (_)      |")
+        print(" |      \|/      |")
+        print(" |       |       |")
+        print(" |               |")
+    if chances == 3:
+        print("  ===> FORCA <=== ")
+        print("  _______         ")
+        print(" |       |       |")
+        print(" |      (_)      |")
+        print(" |      \|/      |")
+        print(" |       |       |")
+        print(" |      /        |")
+    if chances == 2:
+        print("  ===> FORCA <=== ")
+        print("  _______         ")
+        print(" |       |       |")
+        print(" |      (_)      |")
+        print(" |      \|/      |")
+        print(" |       |       |")
+        print(" |      / \      |")
+    if chances == 1:
+        print("  ===> FORCA <=== ")
+        print("  _______         ")
+        print(" |       |       |")
+        print(" |   ___(_)___   |")
+        print(" |      \|/      |")
+        print(" |       |       |")
+        print(" |      / \      |")
+
+    if chances == 0:
+        print("VOCÊ FOI ENFORCADO !!!!!!!!!!")
+        print("    _______________         ")
+        print("   /               \       ")
+        print("  /                 \      ")
+        print("//                   \/\  ")
+        print("\|   XXXX     XXXX   | /   ")
+        print(" |   XXXX     XXXX   |/     ")
+        print(" |   XXX       XXX   |      ")
+        print(" |                   |      ")
+        print(" \__      XXX      __/     ")
+        print("   |\     XXX     /|       ")
+        print("   | |           | |        ")
+        print("   | I I I I I I I |        ")
+        print("   |  I I I I I I  |        ")
+        print("   \_             _/       ")
+        print("     \_         _/         ")
+        print("       \_______/           ")
+        print("                           ")
+        print (f"A palavra secreta era: {word}")
         break
 
-    print(f'Chances restantes: {chances}')
     
-
-
-
-
